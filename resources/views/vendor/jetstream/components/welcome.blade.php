@@ -1,0 +1,1 @@
+<iframe class="absolute inset-0 w-full border-4 border-white rounded-lg lg:mt-20 h-2/3" src="https://iframe.dacast.com/live/452ec86a-cc62-5959-b1a6-47cfdd923db3/8ce97315-d4af-a942-9b15-127e6ef72afc" frameborder="0" scrolling="no" allow="autoplay" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
