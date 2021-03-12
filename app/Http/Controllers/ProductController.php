@@ -46,6 +46,8 @@ class ProductController extends Controller
             'name' => $request->name,
             'description' => $request->description,
             'price' => $request->price,
+            'category' => $request->category,
+            'link' => $request->link,
         ]);
         return back();
     }
@@ -56,9 +58,10 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show($category)
     {
-        //
+        $products = Product::where('category', $category)->get();
+        return view('products.show', compact('products'));
     }
 
     /**

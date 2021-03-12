@@ -150,6 +150,20 @@
                                                     </div>
                                                     <div class="px-4 py-2 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                                                         <dt class="mt-3 text-sm font-medium text-gray-500">
+                                                        Category
+                                                        </dt>
+                                                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                                                            <select id="category" name="category" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-500 focus:ring-opacity-50">
+                                                                <option id="category" name="category" value="1" {{ $product->category == 1 ? 'selected' : '' }}>Feeds</option>
+                                                                <option id="category" name="category" value="2" {{ $product->category == 2 ? 'selected' : '' }}>Disinfectant</option>
+                                                                <option id="category" name="category" value="3" {{ $product->category == 3 ? 'selected' : '' }}>Supplement</option>
+                                                                <option id="category" name="category" value="4" {{ $product->category == 4 ? 'selected' : '' }}>Shampoo</option>
+                                                                <option id="category" name="category" value="5" {{ $product->category == 5 ? 'selected' : '' }}>Antibiotics</option>
+                                                            </select>
+                                                        </dd>
+                                                    </div>
+                                                    <div class="px-4 py-2 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                                                        <dt class="mt-3 text-sm font-medium text-gray-500">
                                                         Link
                                                         </dt>
                                                         <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
@@ -160,7 +174,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="px-4 py-2 bg-gray-50 sm:px-6 sm:flex sm:flex-row-reverse">
+                                            <div class="px-4 py-2 bg-white sm:px-6 sm:flex sm:flex-row-reverse">
                                                 <button type="submit" class="inline-flex justify-center w-full px-4 py-2 text-base font-medium text-white bg-gray-600 border border-transparent rounded-md shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:ml-3 sm:w-auto sm:text-sm">
                                                 Update
                                                 </button>
@@ -238,6 +252,20 @@
                             <x-jet-input id="price" class="block w-full" type="number" name="price" min="0" step="0.1" required autofocus />
                         </dd>
                     </div>
+                    <div class="px-4 py-2 bg-gray-50 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="mt-3 text-sm font-medium text-gray-500">
+                        Category
+                        </dt>
+                        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                            <select id="category" name="category" class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-500 focus:ring-opacity-50">
+                                <option id="category" name="category" value="1">Feeds</option>
+                                <option id="category" name="category" value="2">Disinfectant</option>
+                                <option id="category" name="category" value="3">Supplement</option>
+                                <option id="category" name="category" value="4">Shampoo</option>
+                                <option id="category" name="category" value="5">Antibiotics</option>
+                            </select>
+                        </dd>
+                    </div>
                     <div class="px-4 py-2 bg-white sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                         <dt class="mt-3 text-sm font-medium text-gray-500">
                         Link
@@ -250,7 +278,7 @@
                 </div>
             </div>
 
-            <div class="px-4 py-4 bg-white sm:px-6 sm:flex sm:flex-row-reverse">
+            <div class="px-4 py-4 bg-gray-50 sm:px-6 sm:flex sm:flex-row-reverse">
                 <button type="submit" class="inline-flex justify-center w-full px-4 py-2 text-base font-medium text-white bg-gray-600 border border-transparent rounded-md shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:ml-3 sm:w-auto sm:text-sm">
                 Create
                 </button>
