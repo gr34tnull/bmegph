@@ -5,7 +5,7 @@
         <a href="{{ auth()->check() ? route('dashboard') : url('/') }}">
             <img src="{{asset('logo.png')}}" class="w-auto h-24 transform hover:scale-105">
         </a>
-        <img src="{{asset('header_endorsers.png')}}" class="w-auto h-24 transform hover:scale-105">
+        <img src="{{asset('header_national.png')}}" class="w-auto h-20 py-4 transform hover:scale-105">
     </div>
 
     <div class="grid grid-cols-1 gap-4 mx-20 md:grid-cols-3 lg:xl:grid-cols-4 xl:grid-cols-5">

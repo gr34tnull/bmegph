@@ -3,9 +3,9 @@
 
     <div class="flex flex-col items-center justify-center">
         <a href="{{ auth()->check() ? route('dashboard') : url('/') }}">
-            <img src="{{asset('logo.png')}}" class="w-auto h-20 transform hover:scale-105">
+            <img src="{{asset('logo.png')}}" class="w-auto h-24 transform hover:scale-105">
         </a>
-        <img src="{{asset('header_products.png')}}" class="w-auto h-24 transform hover:scale-105">
+        <img src="{{asset('header_categories.png')}}" class="w-auto h-20 py-4 transform hover:scale-105">
     </div>
 
     <div class="grid gap-10 py-10 mx-20 lg:grid-cols-5">
