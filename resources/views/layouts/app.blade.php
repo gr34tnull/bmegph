@@ -16,6 +16,16 @@
         
         <!-- Styles -->
         <style>
+        @font-face {
+            /* line 8, ../sass/styles.scss */
+            html {
+                font-family: 'Futura';
+                src: url("{{asset('fonts/Futura_Condensed_ExtraBold.ttf')}}");
+                font-weight: normal;
+                font-style: normal;
+            }
+        }
+
         .i-container {
             position: relative;
             width: 100%;

@@ -1,10 +1,12 @@
 <x-app-layout>
 <div class="flex flex-col items-center justify-center px-32 py-12">
 
-    <a href="{{ auth()->check() ? route('dashboard') : url('/') }}">
-        <img src="{{asset('logo.png')}}" class="w-auto h-20 transform hover:scale-105">
-    </a>
-    <h1 class="pb-5 text-3xl font-extrabold text-center text-gray-300 uppercase">PRODUCTS</h1>
+    <div class="flex flex-col items-center justify-center">
+        <a href="{{ auth()->check() ? route('dashboard') : url('/') }}">
+            <img src="{{asset('logo.png')}}" class="w-auto h-20 transform hover:scale-105">
+        </a>
+        <img src="{{asset('header_products.png')}}" class="w-auto h-24 transform hover:scale-105">
+    </div>
 
     <div class="grid gap-10 py-10 mx-20 lg:grid-cols-5">
     

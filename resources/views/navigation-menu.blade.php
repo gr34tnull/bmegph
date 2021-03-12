@@ -24,7 +24,7 @@
                     <x-jet-nav-link href="{{ route('regionals') }}" :active="request()->routeIs('regionals')">
                         {{ __('Regional Endorsers') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('showcase.index') }}" :active="request()->routeIs('showcase.index')">
+                    <x-jet-nav-link href="">
                         {{ __('KMP Showcase') }}
                     </x-jet-nav-link>
                 </div>
